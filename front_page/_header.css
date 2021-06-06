@@ -8,26 +8,25 @@
   align-items: center;
 }
 
-.header_inner .header_logo {
+.header .header_logo {
   padding-right: 39px;
 }
 
-.header_inner .nav_list {
+.header .nav_list {
   display: flex;
   align-items: center;
   color: #fff;
   font-size: 1rem;
 }
 
-.header_inner .nav_item::before,
-.header_inner .nav_item::after {
-  content: '';
-  width: 3px;
-  height: 40px;
-  background-color: #3fc1c9;
+.header .nav_item::before {
+  content: attr(data-en);
+  font-size: 10px;
 }
 
-.header_inner .nav_item::after {
-  margin-left: 30px;
-  transform: rotate(35deg);
+.header .nav_item a::after {
+  margin: 0 7px 4px 8px;
+  content: '/';
+  width: 23px;
+  height: 26px;
 }

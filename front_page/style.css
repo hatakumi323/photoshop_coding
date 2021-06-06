@@ -1,3 +1,36 @@
+.header {
+  background-color: #4b6cb7;
+}
+
+.header_inner {
+  padding: 26px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.header .header_logo {
+  padding-right: 39px;
+}
+
+.header .nav_list {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.header .nav_item::before {
+  content: attr(data-en);
+  font-size: 10px;
+}
+
+.header .nav_item a::after {
+  margin: 0 7px 4px 8px;
+  content: '/';
+  width: 23px;
+  height: 26px;
+}
+
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -468,4 +501,8 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
 }

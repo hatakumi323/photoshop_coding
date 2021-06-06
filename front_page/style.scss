@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+@import "header.scss";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -471,4 +473,9 @@ template {
   display: none;
 }
 
-@import "header.scss"
+
+// font-family
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
