@@ -477,5 +477,41 @@ template {
 // font-family
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+// about
+
+.about {
+  background-color: #4b6cb7;
+  background-image: url(../images/top-image-1.png);
+  width: 1366px;
+
+  &_ttl {
+    font-size: 96px;
+    text-shadow: 4.2px 4.2px 4px rgba(24, 40, 72, 0.5);
+    font-weight: 900;
+    color: #fff;
+    padding: 121px 0 40px 175px;
+  }
+
+  .Corporate_Philosophy {
+    padding-left: 175px;
+    color: #182848;
+    font-size: 32px;
+    position: relative;
+    z-index: 1;
+    &::before {
+    transform: skewX(-45deg);
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 175px; right: 0;
+    z-index: -1;
+    background-color: #fff;
+    width: 360px;
+    }
+    &:nth-of-type(2) {
+      margin-top: 60px;
+    }
+  }
 }

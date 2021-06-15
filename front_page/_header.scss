@@ -2,6 +2,7 @@
 
 .header {
     background-color: #4b6cb7;
+    width: 1366px;
 
     &_inner {
         padding: 26px 25px;
@@ -19,13 +20,19 @@
         color: #fff;
         font-size: 1rem;
     }
-    .nav_item::before {
+    .nav_item {
+        text-align: center;
+    }
+    .nav_item a{
+        display: block;
+    }
+    .nav_item::after {
         content: attr(data-en);
         font-size: 10px;
+        
     }
-    .nav_item a::after{
+    .nav_item a span{
         margin: 0 7px 4px 8px;
-        content: '/';
         width: 23px;
         height: 26px;
     }
